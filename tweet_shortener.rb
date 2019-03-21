@@ -44,5 +44,3 @@ end
       tweet
     end
   end
-
-end

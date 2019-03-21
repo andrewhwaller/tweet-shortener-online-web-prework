@@ -28,3 +28,8 @@ def bulk_tweet_shortener(tweets)
     puts word_substituter(tweet)
   end
 end
+
+def selective_tweet_shortener(tweets)
+  if tweet.length > 140 then word_substituter(tweet) else tweet
+  end
+end

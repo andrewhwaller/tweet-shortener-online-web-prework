@@ -11,5 +11,6 @@ def dictionary
 end
 
 def word_substituter(tweet)
-  tweet.select {}
+  comparison_array = []
+  comparison_array << dictionary.keys
 end

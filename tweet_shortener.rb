@@ -11,6 +11,11 @@ def dictionary
 end
 
 def word_substituter(tweet)
-  comparison_array = []
-  comparison_array << dictionary.keys
+  tweet.split.collect do |word|
+    if dictionary.keys.include?(word.downcase)
+      word = dictionary[word.downcase]
+    else
+      word
+    end
+  end.join(" ")
 end
